@@ -1,4 +1,3 @@
-
 # limitations of vectors: they are flat, and don't nest
 my_vector = c(5,6,7, c(6,7,8))
 my_vector
@@ -84,8 +83,6 @@ list(my_vector)
 my_new_list = as.list(my_vector)
 unlist(my_new_list)
 
-
-
 # DATAFRAMES
 # in dataframes, you can store rows and columns of diffferent types of data
 
@@ -149,4 +146,3 @@ colnames(df) #shows column names in order
 # to change column names, do the following:
 colnames(df) = c("Names", "Ages", "Incomes", "Sex")
 df
-
