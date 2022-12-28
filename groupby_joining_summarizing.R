@@ -3,7 +3,6 @@ library(lubridate)
 library(nycflights13)
 
 ############################### group_by basics ################################
-
 # subset the data to look only at LGA and JFK
 
 lga = flights %>%
@@ -77,10 +76,7 @@ df %>% group_by(origin) %>% mutate(group_index = 1:n()) #n() returns the number
 df %>% mutate(group_ids = group_indices(df, origin)) %>%
   group_by(origin) %>% mutate(group_index = 1:n())
 
-
-
 ################################## summarize ###################################
-
 
 df = flights %>% select(origin, dep_delay, arr_delay, distance, tailnum) %>%
   mutate (origin = factor(origin))
@@ -118,9 +114,6 @@ df %>%
     vars(dep_delay, arr_delay),
     funs(mean(., na.rm = T), var(., na.rm = T))
   )
-
-
-
 
 ############################ joining data with dplyr ###########################
 
@@ -194,26 +187,3 @@ inner_join(band_members, band_instruments, by = 'name')
 
 # full_join() basically keeps everything, with missing data as NA
 band_members %>% full_join(band_instruments)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
