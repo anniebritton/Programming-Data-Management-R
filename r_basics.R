@@ -20,7 +20,6 @@
 # D- Division, A- Addition, and S- Subtraction
 # Use parentheses to change the order of operations
 
-
 # Assigning a variable (binding)
 random_example <- (5*5 / 3 + 20 ^ 4)
 
