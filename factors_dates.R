@@ -1,5 +1,4 @@
 ################################## FACTORS ####################################
-
 library(tidyverse)
 
 # factors are also known as categorical variables, with no inherent numeric values
@@ -53,7 +52,6 @@ partyid_collapsed = fct_collapse(
 
 fct_count(partyid_collapsed, sort = T)
 
-
 # drop unused levels
 sex_factor = factor(c('male', 'female'), levels = c('male', 'female', "other"))
 fct_drop(sex_factor)
@@ -88,12 +86,8 @@ fct_reorder()
 fct_rev()
 
 
-
-
 ################################## Dates in R ##################################
-
 library(lubridate)
-
 
 as_date(0)
 as_date(1)
@@ -116,10 +110,8 @@ as_date(non_standard_date, tz = "US/Eastern", format = '%m/%d/%Y')
 
 OlsonNames() # for finding the timezone. you don't need to specific a timezone though
 
-
 # you can also use as.Date() in base R to do the above
 as.Date(non_standard_date, format = '%m/%d/%Y')
-
 
 ########################### lubridate functions #################################
 
@@ -153,14 +145,3 @@ today_date + days(1)
 today_date + months(1)
 
 # etc...
-
-
-
-
-
-
-
-
-
-
-
