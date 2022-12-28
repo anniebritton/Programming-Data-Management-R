@@ -34,7 +34,6 @@ multiply_two_numbers <- function(number_1, number_2) { #number_1 and number_2 ar
 
 multiply_two_numbers(5,7) # 5 and 7 are arguments
 
-
 ## Function scope - everything lives in an environment
 # global scope is separate from the function scope - R will always look inside
 # of the function first, and then to the global scope if necessary for variables
@@ -42,7 +41,6 @@ multiply_two_numbers(5,7) # 5 and 7 are arguments
 # function
 # also, what happens inside of a function stays inside of the function,
 # and doesn't impact the global scope
-
 
 ## Function parameters
 # can call them whatever you want, as long as you call them correctly within
@@ -61,24 +59,7 @@ multiply_2_numbers <- function(num1, num2 = 2) {
 multiply_2_numbers(6, 5)
 multiply_2_numbers(6)
 
-
-
 # Chaining Functions - combining multiple functions together
 # R will always run inner functions first, and then work its way out
 
 multiply_by_2(multiply_two_numbers(5, multiply_2_numbers(7, 6)))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
