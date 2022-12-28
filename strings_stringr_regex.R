@@ -15,8 +15,6 @@ str_length(astring) #gives length of string
 paste('Hello', 'my name is', 'Annie') # puts in white space for you
 paste0('Hello', 'my name is', 'Annie') # does not put in white space for you
 
-
-
 ########################## stringr Package Functions ###########################
 
 # every stringr function starts with str_, and string is always the first arg
@@ -86,8 +84,6 @@ str_replace(x, 'annie', "Annie" )
 str_replace(some_string, ',', "-----" )
 str_replace_all(some_string, ',', "-----" )
 
-
-
 ############################## Refactoring and Pipes ###########################
 
 # see video 6.4 for details on this section
@@ -110,10 +106,7 @@ new_shopping_list <- str_trim(shopping_list, 'both') %>%
   str_trim(., 'left') %>%
   str_to_title(.)
 
-
-
 ########################### Regular Expressions (RegEx) ########################
-
 
 # a RegEx is a pattern that exists in a string that you might want to locate
 
@@ -181,9 +174,7 @@ string = "Annie!! - #410-818-7152"
 pattern = '[[:punct:]]{1,}'
 str_extract(string, pattern)
 
-
 ############### RegEx quantifiers and other special symbols ####################
-
 
 # the anything character (.) and the '0 or more times' character (*)
 string = "today's date is 10/11/2022 and it is 4pm"
@@ -228,19 +219,3 @@ pattern = '\\S^\\S' #this won't work because it is taking the special meaning of
 pattern_2 = '\\S\\^\\S' #add in \\ before
 str_extract(string, pattern)
 str_extract(string, pattern_2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
