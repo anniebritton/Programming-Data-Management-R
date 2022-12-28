@@ -2,9 +2,7 @@ library(tidyverse)
 
 # functions allow you to take a function and apply it over every item in a 
 # list or vector
-
 x = c(1, 2, 3, 4, 5)
-
 
 square = function(item) {
  return(item * item) 
@@ -37,7 +35,6 @@ print_names = function(name) {
 names = c('Robert', 'Elizabeth', 'John')
 walk(names, print_names)
 
-
 # what if we want to map over 2 variables instead of 1
 x = c(1, 2, 3, 4, 5)
 y = c(6, 7, 8, 9, 10) #vectors need to be the same length
@@ -47,7 +44,6 @@ map2(x, y, function(x, y) x + y)
 
 # map2 also works with underscore functions to specify type
 map2_dbl(x, y, function(x, y) x + y) 
-
 
 name = c('Robert', 'Elizabeth', 'John')
 age = c(25, 63, 45)
@@ -111,22 +107,4 @@ my_tibble %>%
 my_tibble[] = my_tibble %>% map(square_numbers) # to actually get this to hold
 my_tibble
 
-
 # look up safely() and possibly() in purr for more info
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
