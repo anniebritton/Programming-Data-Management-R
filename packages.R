@@ -9,15 +9,3 @@ my_tibble = tibble(
   income = c(10.25, 30.00, 18.50),
   gender = c('male', 'male', 'female')
 )
-
-
-
-
-
-
-
-
-
-
-
-
