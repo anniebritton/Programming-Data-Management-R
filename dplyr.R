@@ -3,7 +3,6 @@ library(tidyverse)
 library(lubridate)
 library(nycflights13)
 
-
 ##################### using the select() function from dplyr ###################
 
 # load in the nyc flights data
@@ -43,7 +42,6 @@ df %>% select(contains('_'))
 
 df %>% select(-contains('_'))
 
-
 ################## using filter(), arrange(), and mutate() #####################
 
 # filter allows us to use a conditional to only return certain rows
@@ -73,7 +71,6 @@ df %>% mutate(date = as_date(time_hour)) %>%
 
 df %>% mutate(log_distance = log(distance)) %>%
   select(log_distance, everything())
-
 
 ####################### more advanced dplyr functions ##########################
 
@@ -112,11 +109,3 @@ df %>% mutate_if(
   is.character,
   ~ str_to_lower(.) %>% str_c("CONCAT")
 ) %>% glimpse()
-
-
-
-
-
-
-
-
