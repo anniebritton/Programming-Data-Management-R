@@ -134,5 +134,3 @@ separated_data = data %>%
   separate(col = 'name', into = c('first_name', 'last_name'), sep = ' ')
 
 separated_data %>% unite(col = 'full_name', first_name, last_name, sep = ' ')
-
-
