@@ -1,6 +1,5 @@
 ############################ working directories ###############################
 
-
 # set current working directory
 setwd("C:/Users/annie/Documents/R_Programming/Week_9_Scripts")
 
@@ -12,7 +11,6 @@ setwd("C:/Users/annie/Documents/R_Programming/Week_9_Scripts")
 
 ########################### reading and writing data ###########################
 library(tidyverse)
-
 
 # the 'here' package
 library(here)
@@ -55,7 +53,6 @@ read_sav()
 read_dta()
 read_rds()
 
-
 ############################## important functions #############################
 
 # I'm only writing down the ones I don't know off the top of my head :)
@@ -87,7 +84,6 @@ my_vector = c(
 
 str_to_upper(my_vector)
 
-
 my_function = function(x) {
   if (str_length(x) <= 10) {
     return (str_to_lower(x))
@@ -112,16 +108,3 @@ my_new_vector
 
 sapply(my_vector, my_function, USE.NAMES = F) # displays the output as a vector
 lapply(my_vector, my_function) # displays the output as a list 
-
-
-
-
-
-
-
-
-
-
-
-
-
