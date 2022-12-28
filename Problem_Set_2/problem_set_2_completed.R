@@ -75,5 +75,3 @@ is.factor(show) #check
 
 final_df <- tibble(date, show, length, text)
 final_df
-
-
